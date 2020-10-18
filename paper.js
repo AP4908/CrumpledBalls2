@@ -18,17 +18,6 @@ class Paper{
       }
       display(){
 
-        if(keyDown(UP_ARROW)){
-         
-          Matter.Body.applyForce(this.body, this.body.position,{x:10,y:-20});
-
-
-        }
-
-       
-        
-        
-        
         ellipseMode(RADIUS);
         ellipse(this.body.position.x, this.body.position.y,1, 1);
 
@@ -37,3 +26,5 @@ class Paper{
         
       }
     }
+
+    

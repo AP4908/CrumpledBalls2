@@ -37,14 +37,23 @@ function draw() {
 
   
 
-  ball.display();
+  
   ground.display();
   bp1.display();
   bp2.display();
   bp3.display();
+  ball.display();
   
   drawSprites();
  
+}
+function keyPressed(){
+  if(keyCode===UP_ARROW){
+     
+    Matter.Body.applyForce(ball.body, ball.body.position,{x:57,y:-57});
+
+
+  }
 }
 
 
